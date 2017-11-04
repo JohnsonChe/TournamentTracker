@@ -56,7 +56,7 @@
             this.headerLabel.Location = new System.Drawing.Point(13, 9);
             this.headerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.headerLabel.Name = "headerLabel";
-            this.headerLabel.Size = new System.Drawing.Size(324, 50);
+            this.headerLabel.Size = new System.Drawing.Size(317, 50);
             this.headerLabel.TabIndex = 1;
             this.headerLabel.Text = "Create Tournament";
             // 
@@ -72,17 +72,17 @@
             // 
             this.tournamentNameLabel.AutoSize = true;
             this.tournamentNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.tournamentNameLabel.Location = new System.Drawing.Point(31, 81);
+            this.tournamentNameLabel.Location = new System.Drawing.Point(31, 91);
             this.tournamentNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tournamentNameLabel.Name = "tournamentNameLabel";
-            this.tournamentNameLabel.Size = new System.Drawing.Size(188, 30);
+            this.tournamentNameLabel.Size = new System.Drawing.Size(186, 30);
             this.tournamentNameLabel.TabIndex = 9;
             this.tournamentNameLabel.Text = "Tournament Name";
             // 
             // entryFeeValue
             // 
             this.entryFeeValue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.entryFeeValue.Location = new System.Drawing.Point(141, 174);
+            this.entryFeeValue.Location = new System.Drawing.Point(136, 196);
             this.entryFeeValue.Name = "entryFeeValue";
             this.entryFeeValue.Size = new System.Drawing.Size(91, 35);
             this.entryFeeValue.TabIndex = 12;
@@ -93,7 +93,7 @@
             // 
             this.entryFeeLabel.AutoSize = true;
             this.entryFeeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.entryFeeLabel.Location = new System.Drawing.Point(36, 179);
+            this.entryFeeLabel.Location = new System.Drawing.Point(31, 201);
             this.entryFeeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.entryFeeLabel.Name = "entryFeeLabel";
             this.entryFeeLabel.Size = new System.Drawing.Size(98, 30);
@@ -103,7 +103,7 @@
             // selectTeamDropdown
             // 
             this.selectTeamDropdown.FormattingEnabled = true;
-            this.selectTeamDropdown.Location = new System.Drawing.Point(36, 261);
+            this.selectTeamDropdown.Location = new System.Drawing.Point(36, 285);
             this.selectTeamDropdown.Name = "selectTeamDropdown";
             this.selectTeamDropdown.Size = new System.Drawing.Size(308, 38);
             this.selectTeamDropdown.TabIndex = 14;
@@ -112,22 +112,24 @@
             // 
             this.selectTeamLabel.AutoSize = true;
             this.selectTeamLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.selectTeamLabel.Location = new System.Drawing.Point(31, 228);
+            this.selectTeamLabel.Location = new System.Drawing.Point(31, 252);
             this.selectTeamLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.selectTeamLabel.Name = "selectTeamLabel";
-            this.selectTeamLabel.Size = new System.Drawing.Size(125, 30);
+            this.selectTeamLabel.Size = new System.Drawing.Size(123, 30);
             this.selectTeamLabel.TabIndex = 13;
             this.selectTeamLabel.Text = "Select Team";
+            this.selectTeamLabel.Click += new System.EventHandler(this.selectTeamLabel_Click);
             // 
             // createNewTeamLink
             // 
             this.createNewTeamLink.AutoSize = true;
-            this.createNewTeamLink.Location = new System.Drawing.Point(230, 228);
+            this.createNewTeamLink.Location = new System.Drawing.Point(230, 252);
             this.createNewTeamLink.Name = "createNewTeamLink";
             this.createNewTeamLink.Size = new System.Drawing.Size(114, 30);
             this.createNewTeamLink.TabIndex = 15;
             this.createNewTeamLink.TabStop = true;
             this.createNewTeamLink.Text = "create new";
+            this.createNewTeamLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.createNewTeamLink_LinkClicked);
             // 
             // addTeamButton
             // 
@@ -137,7 +139,7 @@
             this.addTeamButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addTeamButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addTeamButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.addTeamButton.Location = new System.Drawing.Point(99, 315);
+            this.addTeamButton.Location = new System.Drawing.Point(99, 340);
             this.addTeamButton.Name = "addTeamButton";
             this.addTeamButton.Size = new System.Drawing.Size(183, 42);
             this.addTeamButton.TabIndex = 16;
@@ -153,7 +155,7 @@
             this.createPrizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createPrizeButton.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createPrizeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-            this.createPrizeButton.Location = new System.Drawing.Point(99, 378);
+            this.createPrizeButton.Location = new System.Drawing.Point(99, 403);
             this.createPrizeButton.Name = "createPrizeButton";
             this.createPrizeButton.Size = new System.Drawing.Size(183, 42);
             this.createPrizeButton.TabIndex = 17;
@@ -177,7 +179,7 @@
             this.tournamentPlayersLabel.Location = new System.Drawing.Point(406, 81);
             this.tournamentPlayersLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tournamentPlayersLabel.Name = "tournamentPlayersLabel";
-            this.tournamentPlayersLabel.Size = new System.Drawing.Size(158, 30);
+            this.tournamentPlayersLabel.Size = new System.Drawing.Size(156, 30);
             this.tournamentPlayersLabel.TabIndex = 19;
             this.tournamentPlayersLabel.Text = "Teams / Players";
             // 
@@ -219,7 +221,7 @@
             this.prizesLabel.Location = new System.Drawing.Point(406, 307);
             this.prizesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.prizesLabel.Name = "prizesLabel";
-            this.prizesLabel.Size = new System.Drawing.Size(158, 30);
+            this.prizesLabel.Size = new System.Drawing.Size(156, 30);
             this.prizesLabel.TabIndex = 22;
             this.prizesLabel.Text = "Teams / Players";
             // 

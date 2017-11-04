@@ -50,7 +50,7 @@
             this.headerLabel.Location = new System.Drawing.Point(13, 9);
             this.headerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.headerLabel.Name = "headerLabel";
-            this.headerLabel.Size = new System.Drawing.Size(210, 50);
+            this.headerLabel.Size = new System.Drawing.Size(209, 50);
             this.headerLabel.TabIndex = 12;
             this.headerLabel.Text = "Create Prize";
             // 
@@ -130,7 +130,7 @@
             this.prizePercentageLabel.Location = new System.Drawing.Point(29, 291);
             this.prizePercentageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.prizePercentageLabel.Name = "prizePercentageLabel";
-            this.prizePercentageLabel.Size = new System.Drawing.Size(168, 30);
+            this.prizePercentageLabel.Size = new System.Drawing.Size(167, 30);
             this.prizePercentageLabel.TabIndex = 19;
             this.prizePercentageLabel.Text = "Prize Percentage";
             // 
