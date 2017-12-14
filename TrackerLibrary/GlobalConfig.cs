@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrackerLibrary.DataAccess;
 
 namespace TrackerLibrary
 {
     public static class GlobalConfig
     {
-        public static List<IDataConnection> Connections { get; private set; } = new List<IDataConnection>();
+        public static List<IDataConnection> Connections { get; private set; }
 
         public static void InitalizeConnections(bool database, bool textFiles)
         {
+            Connections = new List<IDataConnection>();
             if (database)
             {
                 //TO DO - Create the SQL Connection
@@ -21,7 +23,7 @@ namespace TrackerLibrary
             if (textFiles)
             {
                 //TO DO - Create the Text Connection
-                TextConnection text = new TextConnection();
+                TextConnector text = new TextConnector();
                 Connections.Add(text);
             }
         }
